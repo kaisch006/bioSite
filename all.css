@@ -1,0 +1,93 @@
+/* Kaiser, Christopher : Assignment 6+ css */
+
+body {
+    font-family: 'Open Sans Extra Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cfd0cd;
+}
+
+.header, .navbar, .content-container {
+    margin: 20px;
+    background-color: #FFC107;
+    padding: 20px;
+}
+
+.inner-header {
+    background-color: #007BFF;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #005BDF;
+}
+
+.content-container .inner-content {
+    background-color: #cfd0cd;
+    padding: 20px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 32px;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+h3 {
+    color: #000000;
+    font-size: 20px;
+}
+
+h4 {
+    color: #000000;
+    font-size: 14px;
+}
+
+.text-box {
+    background-color: #FFC107;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+img {
+    width: 150px; 
+    height: 150px;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a.button:hover {
+    background-color: #005BDF;
+}
