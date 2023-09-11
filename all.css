@@ -23,6 +23,10 @@ body {
     align-items: center;
 }
 
+.inner-content {
+    display: block;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -74,9 +78,22 @@ h4 {
     padding: 20px;
 }
 
+  .centered-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px
+  }
+
+  .centered-text {
+    display: block;
+    text-align: center;
+  }
+
 img {
-    width: 150px; 
-    height: 150px;
+    width: 500px; 
+    height: 500px;
+    margin: 0 40px;
 }
 
 a.button {
