@@ -11,16 +11,23 @@ body {
     margin: 20px;
     background-color: #FFC107;
     padding: 20px;
+    min-width: 320px;
 }
 
 .inner-header {
     background-color: #007BFF;
-    width: 250px;
-    height: 250px;
+    width: 1000px;
+    max-width: 100%;
+    height: 100px;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.inner-header h1 {
+    color: #ffffff;
+    font-size: clamp(14px, 6vw, 64px);
 }
 
 .inner-content {
@@ -29,18 +36,21 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; 
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 0;
 }
 
 .navbar a {
     padding: 10px 20px;
+    width: 100px;
     background-color: #007BFF;
     color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
+    margin: 0 30px; 
     text-align: center;
+    font-weight: bold;
 }
 
 .navbar a:hover {
@@ -50,6 +60,12 @@ body {
 .content-container .inner-content {
     background-color: #cfd0cd;
     padding: 20px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 h1 {
@@ -64,36 +80,79 @@ h2 {
 
 h3 {
     color: #000000;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 h4 {
     color: #000000;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .text-box {
     background-color: #FFC107;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 20px;
+    min-width: 500px;
+    max-width: 1000px;
+    max-width: 100%;
+    margin: 0 auto; 
+    overflow-x: auto;
+    margin-bottom: 20px;
 }
 
-  .centered-image {
+.centered-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px
-  }
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
 
-  .centered-text {
+.centered-text {
     display: block;
     text-align: center;
-  }
+}
 
 img {
-    width: 500px; 
+    width: 500px;
     height: 500px;
     margin: 0 40px;
+    max-width: 100%; 
+    height: auto;
+    box-sizing: border-box;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 16px;
+    color: #555; 
+    margin-top: 10px;
+}
+
+.bio-info {
+    display: flex;
+    align-items: center;
+    min-width: 500px;
+}
+
+.bio-info img {
+    width: 500px; 
+    height: 500px;
+    margin-right: 20px; 
+}
+
+.inner-content.bio-info {
+    display: flex;
+    align-items: center;
+    min-width: 1500px;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.text-box.hobbies {
+    max-width: 800px;
 }
 
 a.button {
